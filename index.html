@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Isabella Dias — Professora de inglês premium. Aulas personalizadas, online e focadas em conversação, carreira e transformação pessoal.">
+  <title>Isabella Dias | Professora de Inglês Premium</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">Isabella<span class="logo__dot">.</span></a>
+
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="#sobre" class="nav__link">Sobre</a></li>
+          <li><a href="#diferenciais" class="nav__link">Diferenciais</a></li>
+          <li><a href="#metodologia" class="nav__link">Metodologia</a></li>
+          <li><a href="#resultados" class="nav__link">Resultados</a></li>
+          <li><a href="#faq" class="nav__link">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <a href="#" class="btn btn--primary btn--sm">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Agendar aula
+        </a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <img src="assets/bg-hero.webp" alt="" class="hero__bg-img" aria-hidden="true">
+      
+    </div>
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <span class="hero__tag reveal">Professora de Inglês Premium</span>
+        <h1 class="hero__title reveal">
+          Aprenda inglês de forma<br>
+          <em>natural, leve</em> e personalizada.
+        </h1>
+        <p class="hero__subtitle reveal">
+          Aulas online adaptadas aos seus objetivos — trabalho, viagens, entrevistas,
+          intercâmbio ou desenvolvimento pessoal. Um caminho feito sob medida para você.
+        </p>
+        <div class="hero__actions reveal">
+          <a href="#" class="btn btn--primary btn--lg">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Falar no WhatsApp
+          </a>
+          <a href="#metodologia" class="btn btn--ghost btn--lg">
+            <span class="btn__play">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+            </span>
+            Como funciona
+          </a>
+        </div>
+        <div class="hero__stats reveal">
+          <div class="hero__stat">
+            <strong>8+</strong>
+            <span>Anos de experiência</span>
+          </div>
+          <div class="hero__stat-divider"></div>
+          <div class="hero__stat">
+            <strong>100%</strong>
+            <span>Aulas online</span>
+          </div>
+          <div class="hero__stat-divider"></div>
+          <div class="hero__stat">
+            <strong>1:1</strong>
+            <span>Acompanhamento individual</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__visual" aria-hidden="true">
+        <div class="hero__float hero__float--1">
+          <div class="hero__float-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          </div>
+          <div>
+            <strong>Aulas personalizadas</strong>
+            <span>Feitas para seus objetivos</span>
+          </div>
+        </div>
+        <div class="hero__float hero__float--2">
+          <div class="hero__float-avatars">
+            <span>A</span><span>M</span><span>R</span><span>+</span>
+          </div>
+          <div>
+            <strong>200+ alunos</strong>
+            <span>Transformados com confiança</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Bar -->
+  <section class="trust-bar">
+    <div class="container trust-bar__inner">
+      <div class="trust-bar__item">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 15l-2 5 2-1 2 1-2-5"/><circle cx="12" cy="8" r="6"/></svg>
+        <span>Professora certificada</span>
+      </div>
+      <div class="trust-bar__item">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+        <span>Conversação desde a 1ª aula</span>
+      </div>
+      <div class="trust-bar__item">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+        <span>Horários flexíveis</span>
+      </div>
+      <div class="trust-bar__item">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+        <span>Material exclusivo</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre -->
+  <section class="section sobre" id="sobre">
+    <div class="container">
+      <div class="sobre__grid">
+        <div class="sobre__visual reveal">
+          <div class="sobre__image-wrap">
+            <div class="sobre__image-placeholder">
+              <span class="sobre__initials">ID</span>
+            </div>
+            <div class="sobre__decor sobre__decor--1"></div>
+            <div class="sobre__decor sobre__decor--2"></div>
+          </div>
+          <div class="sobre__quote">
+            <p>"Language opens worlds."</p>
+          </div>
+        </div>
+        <div class="sobre__content">
+          <span class="section__tag reveal">Sobre mim</span>
+          <h2 class="section__title reveal">Ensinar inglês é conectar pessoas a novas possibilidades</h2>
+          <p class="section__text reveal">
+            Sou a <strong>Isabella Dias</strong>, professora de inglês certificada com mais de oito anos
+            de experiência acompanhando alunos de diferentes níveis — do iniciante absoluto ao avançado
+            que busca refinamento e fluência.
+          </p>
+          <p class="section__text reveal">
+            Minha abordagem nasce de uma convicção simples: inglês não é uma matéria, é uma ferramenta
+            de vida. Ensino focado em pessoas reais, com objetivos reais — seja uma promoção, uma viagem
+            dos sonhos ou a coragem de se expressar em outro idioma.
+          </p>
+          <p class="section__text reveal">
+            Minha metodologia é humana e personalizada. Respeito o ritmo de cada aluno, incorporo
+            arte, cultura e criatividade nas aulas, e acredito que aprender pode — e deve — ser leve,
+            acolhedor e transformador.
+          </p>
+          <ul class="sobre__highlights reveal">
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              Certificação internacional em ensino de inglês
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              Experiência com alunos de todos os níveis
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              Metodologia centrada no aluno e nos seus objetivos
+            </li>
+            <li>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              Paixão por cultura, arte e comunicação autêntica
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Diferenciais -->
+  <section class="section diferenciais" id="diferenciais">
+    <div class="container">
+      <div class="section__header section__header--center reveal">
+        <span class="section__tag">Diferenciais</span>
+        <h2 class="section__title">Uma experiência de aprendizado<br>feita exclusivamente para você</h2>
+        <p class="section__subtitle">Cada detalhe das aulas é pensado para acelerar sua evolução com leveza e propósito.</p>
+      </div>
+      <div class="diferenciais__grid">
+        <article class="diff-card reveal">
+          <div class="diff-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+          <h3>Aulas personalizadas</h3>
+          <p>Conteúdo adaptado ao seu nível, ritmo e objetivos específicos — nada de aulas genéricas.</p>
+        </article>
+        <article class="diff-card reveal">
+          <div class="diff-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+          </div>
+          <h3>Conversação prática</h3>
+          <p>Fale desde a primeira aula. Foco em comunicação real, não apenas gramática decorada.</p>
+        </article>
+        <article class="diff-card reveal">
+          <div class="diff-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg>
+          </div>
+          <h3>Inglês para trabalho</h3>
+          <p>Reuniões, apresentações, e-mails e negociações — prepare-se para o mercado internacional.</p>
+        </article>
+        <article class="diff-card reveal">
+          <div class="diff-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17.8 19.2L16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></svg>
+          </div>
+          <h3>Inglês para viagens</h3>
+          <p>Ganhe autonomia e confiança para explorar o mundo sem barreiras linguísticas.</p>
+        </article>
+        <article class="diff-card reveal">
+          <div class="diff-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+          </div>
+          <h3>Preparação para entrevistas</h3>
+          <p>Simulações, feedback detalhado e estratégias para se destacar em processos seletivos.</p>
+        </article>
+        <article class="diff-card reveal">
+          <div class="diff-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+          </div>
+          <h3>Acompanhamento individual</h3>
+          <p>Você nunca estará sozinho. Acompanhamento próximo em cada etapa da sua jornada.</p>
+        </article>
+        <article class="diff-card reveal">
+          <div class="diff-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 016.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 014 19.5v-15A2.5 2.5 0 016.5 2z"/></svg>
+          </div>
+          <h3>Materiais exclusivos</h3>
+          <p>Recursos criados especialmente para complementar suas aulas e acelerar seu progresso.</p>
+        </article>
+        <article class="diff-card reveal">
+          <div class="diff-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h3>Flexibilidade de horários</h3>
+          <p>Aulas que se encaixam na sua rotina — manhã, tarde ou noite, de onde você estiver.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Metodologia -->
+  <section class="section metodologia" id="metodologia">
+    <div class="container">
+      <div class="section__header section__header--center reveal">
+        <span class="section__tag">Metodologia</span>
+        <h2 class="section__title">Sua jornada até a fluência</h2>
+        <p class="section__subtitle">Um processo claro, humano e estratégico — do primeiro contato à confiança plena.</p>
+      </div>
+      <div class="metodologia__timeline">
+        <div class="metodologia__line" aria-hidden="true"></div>
+        <div class="metodologia__steps">
+          <article class="step-card reveal">
+            <div class="step-card__number">01</div>
+            <div class="step-card__content">
+              <h3>Diagnóstico</h3>
+              <p>Conversamos sobre seus objetivos, nível atual e desafios. Entendo quem você é antes de traçar qualquer plano.</p>
+            </div>
+          </article>
+          <article class="step-card reveal">
+            <div class="step-card__number">02</div>
+            <div class="step-card__content">
+              <h3>Planejamento personalizado</h3>
+              <p>Monto um plano exclusivo com metas claras, prazos realistas e conteúdo alinhado à sua vida.</p>
+            </div>
+          </article>
+          <article class="step-card reveal">
+            <div class="step-card__number">03</div>
+            <div class="step-card__content">
+              <h3>Prática constante</h3>
+              <p>Exercícios dinâmicos, atividades contextualizadas e revisões inteligentes que fixam o aprendizado.</p>
+            </div>
+          </article>
+          <article class="step-card reveal">
+            <div class="step-card__number">04</div>
+            <div class="step-card__content">
+              <h3>Conversação aplicada</h3>
+              <p>Simulações de situações reais — reuniões, viagens, entrevistas — para você usar o inglês de verdade.</p>
+            </div>
+          </article>
+          <article class="step-card reveal">
+            <div class="step-card__number">05</div>
+            <div class="step-card__content">
+              <h3>Confiança e fluência</h3>
+              <p>O resultado: você fala com naturalidade, segurança e autonomia — em qualquer contexto.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resultados -->
+  <section class="section resultados" id="resultados">
+    <div class="container">
+      <div class="section__header section__header--center reveal">
+        <span class="section__tag section__tag--light">Resultados</span>
+        <h2 class="section__title section__title--light">Histórias de transformação</h2>
+        <p class="section__subtitle section__subtitle--light">Alunos que saíram da insegurança para a confiança — e abriram portas que antes pareciam distantes.</p>
+      </div>
+      <div class="testimonials">
+        <div class="testimonials__track" id="testimonialsTrack">
+          <article class="testimonial-card">
+            <div class="testimonial-card__header">
+              <div class="testimonial-card__avatar">MC</div>
+              <div>
+                <strong>Marina Costa</strong>
+                <span>Executiva de Marketing</span>
+              </div>
+            </div>
+            <div class="testimonial-card__stars" aria-label="5 estrelas">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <blockquote>
+              "Passei de travar em reuniões internacionais a liderar apresentações com confiança.
+              A Isabella entende exatamente o que cada profissional precisa."
+            </blockquote>
+            <div class="testimonial-card__evolution">
+              <span class="evolution-tag">Evolução</span>
+              Intermediário → Fluente em 6 meses
+            </div>
+          </article>
+          <article class="testimonial-card">
+            <div class="testimonial-card__header">
+              <div class="testimonial-card__avatar">RF</div>
+              <div>
+                <strong>Rafael Ferreira</strong>
+                <span>Engenheiro de Software</span>
+              </div>
+            </div>
+            <div class="testimonial-card__stars" aria-label="5 estrelas">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <blockquote>
+              "Estudei inglês por anos em escolas tradicionais e nunca conseguia falar. Com a Isabella,
+              em três meses já estava passando em entrevistas em inglês."
+            </blockquote>
+            <div class="testimonial-card__evolution">
+              <span class="evolution-tag">Evolução</span>
+              Bloqueio na fala → Entrevista aprovada
+            </div>
+          </article>
+          <article class="testimonial-card">
+            <div class="testimonial-card__header">
+              <div class="testimonial-card__avatar">LA</div>
+              <div>
+                <strong>Luciana Almeida</strong>
+                <span>Empreendedora</span>
+              </div>
+            </div>
+            <div class="testimonial-card__stars" aria-label="5 estrelas">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            </div>
+            <blockquote>
+              "Viajei sozinha pela Europa e me senti completamente autônoma. As aulas focadas em
+              situações reais fizeram toda a diferença na minha experiência."
+            </blockquote>
+            <div class="testimonial-card__evolution">
+              <span class="evolution-tag">Evolução</span>
+              Iniciante → Viagem solo pela Europa
+            </div>
+          </article>
+        </div>
+        <div class="testimonials__nav">
+          <button class="testimonials__btn" id="prevTestimonial" aria-label="Depoimento anterior">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+          </button>
+          <div class="testimonials__dots" id="testimonialDots"></div>
+          <button class="testimonials__btn" id="nextTestimonial" aria-label="Próximo depoimento">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Para Quem É -->
+  <section class="section para-quem" id="para-quem">
+    <div class="container">
+      <div class="section__header section__header--center reveal">
+        <span class="section__tag">Para quem é</span>
+        <h2 class="section__title">Se você se identifica,<br>essas aulas são para você</h2>
+      </div>
+      <div class="para-quem__grid">
+        <article class="audience-card reveal">
+          <div class="audience-card__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg>
+          </div>
+          <h3>Profissionais</h3>
+          <p>Que precisam de inglês para crescer na carreira, liderar reuniões ou atuar em empresas globais.</p>
+        </article>
+        <article class="audience-card reveal">
+          <div class="audience-card__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg>
+          </div>
+          <h3>Universitários</h3>
+          <p>Que buscam intercâmbio, certificações internacionais ou preparação para o mercado de trabalho.</p>
+        </article>
+        <article class="audience-card reveal">
+          <div class="audience-card__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17.8 19.2L16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></svg>
+          </div>
+          <h3>Viajantes</h3>
+          <p>Que sonham em explorar o mundo com autonomia, segurança e a leveza de se comunicar em qualquer lugar.</p>
+        </article>
+        <article class="audience-card reveal">
+          <div class="audience-card__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+          </div>
+          <h3>Candidatos a vagas</h3>
+          <p>Que precisam se preparar para entrevistas em inglês e querem se sentir prontos e confiantes.</p>
+        </article>
+        <article class="audience-card audience-card--wide reveal">
+          <div class="audience-card__icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+          </div>
+          <div>
+            <h3>Quem já estudou, mas trava na hora de falar</h3>
+            <p>Você entende, lê, até escreve — mas na hora de conversar, trava. Esse é o perfil que mais transformo:
+            pessoas com base, mas sem confiança para usar o inglês no dia a dia.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experiência Premium -->
+  <section class="section premium" id="premium">
+    <div class="container">
+      <div class="premium__grid">
+        <div class="premium__content">
+          <span class="section__tag reveal">Experiência Premium</span>
+          <h2 class="section__title reveal">Muito mais do que aulas —<br>uma <em>transformação</em> guiada</h2>
+          <p class="section__text reveal">
+            Cada aluno recebe uma experiência exclusiva, pensada para gerar resultados reais
+            com leveza, proximidade e excelência em cada detalhe.
+          </p>
+          <ul class="premium__list reveal">
+            <li>
+              <div class="premium__list-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <div>
+                <strong>Atendimento individual</strong>
+                <p>100% das aulas são individuais. Toda a atenção é sua.</p>
+              </div>
+            </li>
+            <li>
+              <div class="premium__list-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <div>
+                <strong>Plano personalizado</strong>
+                <p>Metas, conteúdos e ritmo desenhados exclusivamente para você.</p>
+              </div>
+            </li>
+            <li>
+              <div class="premium__list-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <div>
+                <strong>Acompanhamento próximo</strong>
+                <p>Feedback constante, suporte entre aulas e evolução monitorada.</p>
+              </div>
+            </li>
+            <li>
+              <div class="premium__list-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <div>
+                <strong>Aulas dinâmicas</strong>
+                <p>Conversas, cultura, situações reais — nunca monótonas.</p>
+              </div>
+            </li>
+            <li>
+              <div class="premium__list-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              <div>
+                <strong>Ambiente leve e acolhedor</strong>
+                <p>Sem julgamentos. Um espaço seguro para errar, aprender e evoluir.</p>
+              </div>
+            </li>
+          </ul>
+          <a href="#" class="btn btn--primary btn--lg reveal">
+            Quero essa experiência
+          </a>
+        </div>
+        <div class="premium__visual reveal">
+          <div class="premium__card premium__card--1">
+            <span class="premium__card-label">Individual</span>
+            <strong>1:1</strong>
+            <p>Atenção exclusiva</p>
+          </div>
+          <div class="premium__card premium__card--2">
+            <span class="premium__card-label">Personalizado</span>
+            <strong>100%</strong>
+            <p>Feito para você</p>
+          </div>
+          <div class="premium__card premium__card--3">
+            <span class="premium__card-label">Resultado</span>
+            <strong>Fluência</strong>
+            <p>Com confiança</p>
+          </div>
+          <div class="premium__glow" aria-hidden="true"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section faq" id="faq">
+    <div class="container">
+      <div class="faq__grid">
+        <div class="faq__intro">
+          <span class="section__tag reveal">FAQ</span>
+          <h2 class="section__title reveal">Perguntas frequentes</h2>
+          <p class="section__text reveal">
+            Tire suas dúvidas sobre as aulas. Se ainda tiver alguma pergunta,
+            estou a um clique de distância.
+          </p>
+          <a href="#" class="btn btn--outline reveal">
+            Tirar dúvida no WhatsApp
+          </a>
+        </div>
+        <div class="faq__list reveal">
+          <details class="faq__item">
+            <summary>Qual a modalidade das aulas?</summary>
+            <p>As aulas são 100% online, ao vivo e individuais. Utilizamos plataformas como Google Meet ou Zoom, com material compartilhado em tempo real. Você pode estudar de qualquer lugar do mundo.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Quais níveis são atendidos?</summary>
+            <p>Atendo desde iniciantes absolutos (A1) até alunos avançados (C1/C2) que buscam refinamento, fluência ou preparação para contextos específicos como negócios e entrevistas.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Como funcionam os horários?</summary>
+            <p>Os horários são flexíveis e combinados de acordo com a sua disponibilidade — manhã, tarde ou noite. A regularidade é importante, mas sempre buscamos encaixar na sua rotina.</p>
+          </details>
+          <details class="faq__item">
+            <summary>As aulas focam em conversação?</summary>
+            <p>Sim! Conversação é o pilar central da metodologia. Gramática e vocabulário são trabalhados de forma integrada, sempre aplicados em contextos reais de comunicação.</p>
+          </details>
+          <details class="faq__item">
+            <summary>Iniciantes conseguem acompanhar?</summary>
+            <p>Com certeza. A metodologia respeita o ritmo de cada aluno. Iniciantes são acolhidos com paciência, materiais adaptados e conversação gradual — sem pressão, com progresso real.</p>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Final -->
+  <section class="cta-final" id="contato">
+    <div class="cta-final__bg" aria-hidden="true"></div>
+    <div class="container cta-final__inner">
+      <span class="cta-final__tag reveal">Seu próximo capítulo começa agora</span>
+      <h2 class="cta-final__title reveal">
+        Falar inglês pode abrir portas<br>
+        que você ainda nem imagina.
+      </h2>
+      <p class="cta-final__text reveal">
+        Oportunidades profissionais, viagens inesquecíveis, conexões globais e a confiança
+        de se expressar no idioma mais falado do mundo. Tudo começa com uma conversa.
+      </p>
+      <a href="#" class="btn btn--white btn--xl reveal">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Começar agora pelo WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#" class="logo logo--footer">Isabella<span class="logo__dot">.</span></a>
+        <p>Professora de inglês premium.<br>Aulas personalizadas online.</p>
+      </div>
+      <div class="footer__links">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#diferenciais">Diferenciais</a></li>
+          <li><a href="#metodologia">Metodologia</a></li>
+          <li><a href="#resultados">Resultados</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer__contact">
+        <h4>Contato</h4>
+        <ul>
+          <li>
+            <a href="#">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              WhatsApp
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              contato@isabelladias.com
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              @isabelladias
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p>Projeto conceitual de portfólio · pessoa, depoimentos e contatos fictícios.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
